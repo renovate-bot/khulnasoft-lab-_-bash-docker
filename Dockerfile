@@ -17,12 +17,12 @@ RUN apt-get update && \
     zlib1g-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install ShellCheck
-RUN cd /root && \
+RUN ls -la /root && \
+    cd /tmp && \
     wget https://github.com/koalaman/shellcheck/releases/download/v0.7.1/shellcheck-v0.7.1.linux.x86_64.tar.xz && \
     tar xf shellcheck-v0.7.1.linux.x86_64.tar.xz && \
     mv shellcheck /usr/local/bin/ && \
-    rm -rf shellcheck*
+    rm -rf /tmp/shellcheck*
 
 # Define a function to download, build, and install a version of Bash
 # Usage: install_bash version directory

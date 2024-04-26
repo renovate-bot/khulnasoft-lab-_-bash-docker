@@ -1,5 +1,5 @@
 # Use the official Ubuntu 20.04 base image
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 # Set the Dockerfile author/maintainer label
 LABEL maintainer="KhulnaSoft DevOps <info@khulnasoft.com>"
